@@ -15,8 +15,11 @@
   background-color: #f2f2f2;
 }
 
-.logo_place_header {
+.logo {
   width: 183px;
+}
+
+.logo_place_header {
   height: 32px;
   position: absolute;
   top: 30px;
@@ -69,13 +72,16 @@
 /* header конец */
 
 /* description начало */
+
+/* если margin из блока two-columns задать всей секции description, то и width и min-width из two-columns также надо переносить*/
+
 .two-columns {
   display: flex;
   position: relative;
+  justify-content: space-between;
   width: 80%;
   min-width: 784px;
   margin: 100px auto 100px auto;
-  justify-content: space-between;
 }
 
 .two-columns__brief {
@@ -224,13 +230,25 @@
   flex-direction: column; 
   justify-content: flex-start; 
   align-items: center; 
-  color: #fff;
   background-color: #1f1f1f; 
   overflow: hidden;
 }
 
 .section-title_theme_dark {
   margin-top: 90px;
+  color: #fff;
+}
+
+.section-subtitle_theme_dark {
+  color: #fff;
+}
+
+.table__heading_theme_dark {
+  color: #fff;
+}
+
+.table__text_theme_dark {
+  color: #fff;
 }
 
 .table_theme_dark {
@@ -258,7 +276,6 @@
   display: flex;
   min-height: 350px;
   background-color: #1f1f1f;
-  color: #fff;
 }
 
 .footer__columns {
@@ -276,7 +293,6 @@
 }
 
 .logo__place-footer {
-  width: 183px;
   height: 35px;
 }
 
@@ -285,6 +301,7 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  color: #fff;
 }
 
 .footer__column-heading {
@@ -293,6 +310,7 @@
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 0;
+  color: #fff;
 }
 
 .footer__column-list {
@@ -310,7 +328,7 @@
   color: #fff;
 }
 
-.footer__social-links {
+.footer__social-icon {
   margin-right: 10px;
 }
 /* footer конец */
